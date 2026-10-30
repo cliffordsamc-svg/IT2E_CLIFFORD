@@ -13,7 +13,7 @@ public class Menu {
 
     public void run() {
         while (true) {
-            System.out.println("\n===== Student Console App =====");
+            System.out.println("\n===== Clifford Appliance Shop =====");
             System.out.println("1. Register");
             System.out.println("2. Login");
             System.out.println("3. Exit");
@@ -38,11 +38,12 @@ public class Menu {
         System.out.print("Password: ");
         String password = scanner.nextLine();
 
-        System.out.println("Role: 1) TEACHER  2) STUDENT");
+        System.out.println("Role: 1) ADMIN  2) STOCK_MANAGER  3) CASHIER");
         System.out.print("Choose: ");
         String role = switch (scanner.nextLine().trim()) {
-            case "1" -> "TEACHER";
-            case "2" -> "STUDENT";
+            case "1" -> "ADMIN";
+            case "2" -> "STOCK_MANAGER";
+            case "3" -> "CASHIER";
             default -> null;
         };
 
